@@ -5,7 +5,7 @@ import { useNavigation } from "@react-navigation/native";
 const DoneButton = () => {
   const navigation = useNavigation();
   const DoneHandler = () => {
-    return navigation.navigate("Home");
+    return navigation.navigate("Signin");
   };
   return (
     <TouchableOpacity

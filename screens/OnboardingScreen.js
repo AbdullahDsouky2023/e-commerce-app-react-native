@@ -1,4 +1,4 @@
-import { Text,View} from "react-native";
+import { Dimensions, Text,View} from "react-native";
 import Onboarding from "react-native-onboarding-swiper";
 import Screen2 from "../assets/onboarding/screen2.svg";
 import Chair from "../assets/onboarding/chair.svg";
@@ -7,8 +7,9 @@ import { LinearGradient } from "expo-linear-gradient";
 import DoneButton from "../components/home/onboarding/DoneButton";
 import NextButtonComponent from "../components/home/onboarding/NextButton";
 import CustomDot from "../components/home/onboarding/CustomDot";
-
+const {width,height} = Dimensions.get('window')
 export default function OnboardingScreen() {
+
   return (
     <View className="bg-red-40 flex min-h-[100vh] relative">
       <Onboarding
@@ -63,7 +64,7 @@ export default function OnboardingScreen() {
                   }}
                   start={{ x: 0.5, y: 0 }}
                   end={{ x: 0.5, y: 1 }}
-                  className=" absolute    top-[250px] -left-[500px] bottom-0"
+                  className="absolute   top-[250px] -left-[500px] bottom-0"
                 />
                 <View
                   className="absolute   z-10  -left-[200px] w-[400px]  
@@ -87,9 +88,11 @@ export default function OnboardingScreen() {
             subtitle: "",
           },
           {
+          
             backgroundColor: "#83A9AC",
             image: (
-              <View className="  relative items-start justify-start">
+              <View 
+              className="  relative items-start justify-start">
                 <LinearGradient
                   colors={["transparent", "rgba(0,0,0,0.8)"]}
                   style={{
@@ -101,9 +104,10 @@ export default function OnboardingScreen() {
                   }}
                   start={{ x: 0.5, y: 0 }}
                   end={{ x: 0.5, y: 1 }}
-                  className="absolute   top-[230px] -left-[500px] bottom-0"
+                  className="absolute   top-[250px] -left-[500px] bottom-0"
                 />
-                <View className=" absolute z-10  -left-[235px]    -top-[400px]">
+                <View
+                 className=" absolute z-10  -left-[235px]    -top-[350px]">
                   <Desk size={500} />
                 </View>
               </View>
@@ -113,7 +117,7 @@ export default function OnboardingScreen() {
                 <Text className="text-5xl  max-w-[300px]">
                   Fastest home delivery
                 </Text>
-                <Text className="text-slate-400 ">
+                <Text className="text-slate-100  ">
                   Shopee adds new designs every day. Explore and find the best
                   furniture for ypur home and offices.
                 </Text>
