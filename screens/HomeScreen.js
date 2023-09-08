@@ -2,14 +2,13 @@ import {
   View,
   Text,
 } from "react-native";
+import HomeNavigation from "../navigation/HomeNavigation";
 
 
 export default function HomeScreen() {
   return (
-   <View className='bg-white flex items-center justify-center'>
-    <Text>
-      Home screen
-    </Text>
-   </View>
+   <>
+   <HomeNavigation/>
+   </>
   );
 }

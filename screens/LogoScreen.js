@@ -6,7 +6,7 @@ export default function LogoScreen() {
     const navigation=useNavigation()
     useEffect(() => {
         setTimeout(()=>{
-            navigation.navigate('onboarding')
+            navigation.navigate('Home')
         },1000)
     }, [])
     

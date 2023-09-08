@@ -39,10 +39,7 @@ export default function AppNavigation()
       options={{headerShown:false}}
       />
       {
-        showOnboarding &&
-        <Stack.Screen name="onboarding" component={OnboardingScreen} 
-        options={{headerShown:false}}
-        />
+        showOnboarding && <Stack.Screen name="onboarding" component={OnboardingScreen} options={{headerShown:false}}/>
       }
       <Stack.Screen name="Signin" component={SignInScreen} options={{headerShown:false}} />
       <Stack.Screen name="SignUp" component={SignUpScreen} options={{headerShown:false}} />
