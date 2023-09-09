@@ -9,7 +9,14 @@ import Chair9 from "../assets/Home/chair9.svg";
 import Chair10 from "../assets/Home/chair10.svg";
 import Chair11 from "../assets/Home/chair11.svg";
 import Chair12 from "../assets/Home/chair12.svg";
-
+import Kitchen from '../assets/categories/kitchen..svg'
+import Bedroom from '../assets/categories/bedroom.svg'
+import Dining from '../assets/categories/dining.svg'
+import Living from '../assets/categories/living.svg'
+import Minimul from '../assets/categories/minimul.svg'
+import Modern from '../assets/categories/modern.svg'
+import Stylish from '../assets/categories/stylish.svg'
+import Classic from '../assets/categories/classic.svg'
  const starProducts=[
     {
       name:'comfy Roaser',
@@ -254,5 +261,41 @@ export const icons=[
     {
       outline:'construct-outline',
       filled:'construct'
+    },
+  ]
+export const rooms=[
+    {
+      name:"Kitchen",
+      Image:<Kitchen/>
+    },
+    {
+      "name":"Bedroom",
+      Image:<Bedroom/>
+    },
+    {
+      "name":"Dining",
+      Image:<Dining/>
+    },
+    {
+      "name":"Living",
+      Image:<Living/>
+    },
+  ]
+export const styles=[
+    {
+      name:"Minimul",
+      Image:<Minimul/>
+    },
+    {
+      "name":"Modern",
+      Image:<Modern/>
+    },
+    {
+      "name":"Classic",
+      Image:<Classic/>
+    },
+    {
+      "name":"Stylish",
+      Image:<Stylish/>
     },
   ]

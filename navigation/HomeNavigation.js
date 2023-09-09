@@ -6,6 +6,8 @@ import HomeTabScreen from "../screens/Home/HomeTabScreen";
 import Home from "../assets/Home/home.svg";
 import { useIsFocused } from "@react-navigation/native";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import CategorisScreen from "../screens/categoris/CategorisScreen";
+import NotificationScreen from "../screens/Home/NotificationScreen.js";
 
 function SettingsScreen() {
   return (
@@ -30,7 +32,12 @@ export default function HomeNavigation() {
   return (
 
 
-    <Tab.Navigator >
+    <Tab.Navigator 
+    screenOptions={
+      {
+        headerBackgroundContainerStyle:'red'
+      }
+    }>
       <Tab.Screen
         name="HomeTabScreen"
         options={{
@@ -41,8 +48,8 @@ export default function HomeNavigation() {
               <View className={`m1-2 bg-white`}>
                 <Ionicons
                   name="home-outline"
-                  size={32}
-                  color={focused ? "#FCD240" : "black"}
+                  size={25}
+                  color={focused ? "#FCD240" : "gray"}
                 />
               </View>
             );
@@ -52,7 +59,7 @@ export default function HomeNavigation() {
         component={HomeTabScreen}
       />
       <Tab.Screen
-        name="HomeTabScreen1"
+        name="Categoris"
         options={{
           headerShown: false,
           tabBarLabel: "",
@@ -60,19 +67,19 @@ export default function HomeNavigation() {
             return (
               <View className={`m1-2 bg-white`}>
                 <Ionicons
-                  name="home-outline"
-                  size={32}
-                  color={focused ? "#FCD240" : "black"}
+                  name="apps-outline"
+                  size={25}
+                  color={focused ? "#FCD240" : "gray"}
                   />
               </View>
             );
           },
           tabBarActiveTintColor: "red",
         }}
-        component={HomeTabScreen}
+        component={CategorisScreen}
       />
       <Tab.Screen
-        name="HomeTabScreen3"
+        name="NotificationScreen"
         options={{
           headerShown: false,
           tabBarLabel: "",
@@ -80,9 +87,30 @@ export default function HomeNavigation() {
             return (
               <View className={`m1-2 bg-white`}>
                 <Ionicons
-                  name="home-outline"
-                  size={32}
-                  color={focused ? "#FCD240" : "black"}
+                  name="notifications-outline"
+                  size={25}
+                  color={focused ? "#FCD240" : "gray"}
+                />
+              </View>
+            );
+          },
+          tabBarActiveTintColor: "red",
+        }}
+        component={NotificationScreen}
+      />
+     
+      <Tab.Screen
+        name="Cart"
+        options={{
+          headerShown: false,
+          tabBarLabel: "",
+          tabBarIcon: ({ focused }) => {
+            return (
+              <View className={`m1-2 bg-white`}>
+                <Ionicons
+                  name="cart-outline"
+                  size={25}
+                  color={focused ? "#FCD240" : "gray"}
                 />
               </View>
             );

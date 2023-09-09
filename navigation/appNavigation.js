@@ -15,6 +15,8 @@ import ForgetPasswordScreen from '../screens/ForgetPasswordScreen';
 import CreatePasswordSceen from '../screens/CreatePasswordScreen';
 import CreatePasswordScreen from '../screens/CreatePasswordScreen';
 import LocationScreen from '../screens/LocationScreen';
+import NewArrival from '../components/HomePage/NewArrival';
+import ArrivalScreen from '../screens/Home/ArrivalScreen';
 const Stack = createNativeStackNavigator();
 export default function AppNavigation()
 {
@@ -53,6 +55,7 @@ export default function AppNavigation()
       <Stack.Screen name="FingerPrint" component={FingerPrintScreen} options={{headerShown:false}} />
       <Stack.Screen name="ForgetPassword" component={ForgetPasswordScreen} options={{headerShown:false}} />
       <Stack.Screen name="Home" component={HomeScreen} options={{headerShown:false}} />
+      <Stack.Screen name="NewArrival" component={ArrivalScreen} options={{headerShown:false}} />
     </Stack.Navigator>
   </NavigationContainer>
   );

@@ -75,7 +75,7 @@ export default function LocationScreen({navigation}) {
       }
 
       <TouchableOpacity
-        onPress={() => address?navigation.navigate('SignUp'):getUserLocation()}
+        onPress={() => address?navigation.navigate('Signin'):getUserLocation()}
         className="bg-[#FCD240]
        p-1 w-[350px] h-[65px]
        flex items-center 
