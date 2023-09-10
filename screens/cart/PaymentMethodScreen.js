@@ -46,7 +46,7 @@ export default function Sc({navigation}) {
         width:350,
         marginRight:25
       }}
-      onPress={()=>navigation.navigate('PaymentDetails')}
+      onPress={()=>navigation.navigate('PaymentSuccess')}
         className="bg-[#FCD240]
        p-1  h-[65px]
        flex items-center 

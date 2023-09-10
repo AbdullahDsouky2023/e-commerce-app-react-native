@@ -23,6 +23,9 @@ import ReviewsScreen from '../screens/Home/product/ReviewsScreen';
 import ShippingDetails from '../screens/Home/product/ShippingDetails';
 import PaymentScreen from '../screens/cart/PaymentScreen';
 import PaymentMethodScreen from '../screens/cart/PaymentMethodScreen';
+import SuccessPaymentScreen from '../screens/cart/SuccessPaymentScreen';
+import TrackPaymentScreen from '../screens/cart/TrackPaymentScreen';
+import ProfileScreen from '../screens/profile/ProfileScreen';
 const Stack = createNativeStackNavigator();
 export default function AppNavigation()
 {
@@ -53,10 +56,7 @@ export default function AppNavigation()
       <Stack.Screen name="SignUp" component={SignUpScreen} options={{headerShown:false}} />
       <Stack.Screen name="SignUpSucess" component={SignUpScuccessScreen} options={{headerShown:false}} />
       <Stack.Screen name="VerifyScreen" initialParams={{targetScreen:'FingerPrint'}}component={VerifyScreen} options={{headerShown:false}} />
-      <Stack.Screen 
-      name="CreatePassword" 
-      component={CreatePasswordScreen} 
-      options={{headerShown:false}} />
+      <Stack.Screen name="CreatePassword" component={CreatePasswordScreen}  options={{headerShown:false}} />
       <Stack.Screen name="LocationScreen" component={LocationScreen} options={{headerShown:false}} />
       <Stack.Screen name="FingerPrint" component={FingerPrintScreen} options={{headerShown:false}} />
       <Stack.Screen name="ForgetPassword" component={ForgetPasswordScreen} options={{headerShown:false}} />
@@ -67,6 +67,9 @@ export default function AppNavigation()
       <Stack.Screen name="Shipping" component={ShippingDetails} options={{headerShown:false}} />
       <Stack.Screen name="PaymentDetails" component={PaymentScreen} options={{headerShown:false}} />
       <Stack.Screen name="PaymentMethod" component={PaymentMethodScreen} options={{headerShown:false}} />
+      <Stack.Screen name="PaymentSuccess" component={SuccessPaymentScreen} options={{headerShown:false}} />
+      <Stack.Screen name="TrackPayment" component={TrackPaymentScreen} options={{headerShown:false}} />
+      <Stack.Screen name="Profile" component={ProfileScreen} options={{headerShown:false}} />
     </Stack.Navigator>
   </NavigationContainer>
   );
