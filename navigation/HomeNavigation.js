@@ -9,6 +9,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import CategorisScreen from "../screens/categoris/CategorisScreen";
 import NotificationScreen from "../screens/Home/NotificationScreen.js";
 import CartScreen from "../screens/cart/CartScreen";
+import ShippingDetails from "../screens/Home/product/ShippingDetails";
 
 
 
@@ -106,7 +107,9 @@ export default function HomeNavigation() {
           tabBarActiveTintColor: "red",
         }}
         component={CartScreen}
-      />
+
+     />
+             
      
     </Tab.Navigator>
   );

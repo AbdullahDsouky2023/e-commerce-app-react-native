@@ -31,7 +31,7 @@ export default function CartScreen({navigation}) {
       style={{
         width:350
       }}
-      onPress={()=>navigation.navigation('')}
+      onPress={()=>navigation.navigate('Shipping')}
         className="bg-[#FCD240]
        p-1  h-[65px]
        flex items-center 

@@ -20,6 +20,9 @@ import ArrivalScreen from '../screens/Home/ArrivalScreen';
 import { products } from '../utils/constants';
 import ProductScreen from '../screens/Home/product/ProductScreen';
 import ReviewsScreen from '../screens/Home/product/ReviewsScreen';
+import ShippingDetails from '../screens/Home/product/ShippingDetails';
+import PaymentScreen from '../screens/cart/PaymentScreen';
+import PaymentMethodScreen from '../screens/cart/PaymentMethodScreen';
 const Stack = createNativeStackNavigator();
 export default function AppNavigation()
 {
@@ -61,6 +64,9 @@ export default function AppNavigation()
       <Stack.Screen name="NewArrival" component={ArrivalScreen} options={{headerShown:false}} />
       <Stack.Screen name="Product" component={ProductScreen} options={{headerShown:false}} />
       <Stack.Screen name="Reviews" component={ReviewsScreen} options={{headerShown:false}} />
+      <Stack.Screen name="Shipping" component={ShippingDetails} options={{headerShown:false}} />
+      <Stack.Screen name="PaymentDetails" component={PaymentScreen} options={{headerShown:false}} />
+      <Stack.Screen name="PaymentMethod" component={PaymentMethodScreen} options={{headerShown:false}} />
     </Stack.Navigator>
   </NavigationContainer>
   );
