@@ -5,15 +5,25 @@ import {
   } from "react-native";
   import React from "react";
   import Ionicons from "@expo/vector-icons/Ionicons";
-  import Chair2 from "../../assets/Home/chair2.svg";
+import { useNavigation } from "@react-navigation/native";
 export default function ProductCard({
   name,
   price,
   realPrice,
-  image
+  image,
+  productImage
 }) {
+  const navigation =useNavigation()
+  const product={
+    name,
+    price,
+    realPrice,
+    image,
+    productImage
+  }
   return (
-    <View 
+    <TouchableOpacity 
+    onPress={()=>navigation.navigate('Product',{ product})}
     style={{
         
     }}
@@ -34,6 +44,6 @@ export default function ProductCard({
                   <Ionicons name="add-outline"  color={'black'}/>
                 </TouchableOpacity>
             </View>
-          </View>
+          </TouchableOpacity>
   )
 }

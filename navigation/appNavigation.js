@@ -17,6 +17,9 @@ import CreatePasswordScreen from '../screens/CreatePasswordScreen';
 import LocationScreen from '../screens/LocationScreen';
 import NewArrival from '../components/HomePage/NewArrival';
 import ArrivalScreen from '../screens/Home/ArrivalScreen';
+import { products } from '../utils/constants';
+import ProductScreen from '../screens/Home/product/ProductScreen';
+import ReviewsScreen from '../screens/Home/product/ReviewsScreen';
 const Stack = createNativeStackNavigator();
 export default function AppNavigation()
 {
@@ -56,6 +59,8 @@ export default function AppNavigation()
       <Stack.Screen name="ForgetPassword" component={ForgetPasswordScreen} options={{headerShown:false}} />
       <Stack.Screen name="Home" component={HomeScreen} options={{headerShown:false}} />
       <Stack.Screen name="NewArrival" component={ArrivalScreen} options={{headerShown:false}} />
+      <Stack.Screen name="Product" component={ProductScreen} options={{headerShown:false}} />
+      <Stack.Screen name="Reviews" component={ReviewsScreen} options={{headerShown:false}} />
     </Stack.Navigator>
   </NavigationContainer>
   );

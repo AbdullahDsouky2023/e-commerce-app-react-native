@@ -8,21 +8,9 @@ import { useIsFocused } from "@react-navigation/native";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import CategorisScreen from "../screens/categoris/CategorisScreen";
 import NotificationScreen from "../screens/Home/NotificationScreen.js";
+import CartScreen from "../screens/cart/CartScreen";
 
-function SettingsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Settings!</Text>
-    </View>
-  );
-}
-function SettingsScreen1() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Settings!</Text>
-    </View>
-  );
-}
+
 
 const Tab = createBottomTabNavigator();
 
@@ -117,7 +105,7 @@ export default function HomeNavigation() {
           },
           tabBarActiveTintColor: "red",
         }}
-        component={HomeTabScreen}
+        component={CartScreen}
       />
      
     </Tab.Navigator>

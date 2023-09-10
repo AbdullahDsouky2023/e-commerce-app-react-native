@@ -36,6 +36,7 @@ export default function Cateogries()
             image={product.Image}
             price={product.price}
             realPrice={product.realPrice}
+            productImage={product.productImage}
             />
             </View>)
             })
